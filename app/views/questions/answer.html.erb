@@ -1,0 +1,9 @@
+<h1>Stupid Coaching</h1>
+<% if @question[-1] == "?" %>
+  <%= @answers[1] %>
+<% elsif @question == "I am going to work" %>
+  <%= @answers[0] %>
+<% else %>
+  <%= @answers[2] %>
+<% end %>
+<%= link_to "Ask a new question", ask_path %>
